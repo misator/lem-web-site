@@ -1,7 +1,8 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-<link href="...\Content\bootstrap\" rel="stylesheet" media="">
+   <link href="@Url.Content("~/Content/bootstrap.css")" rel="stylesheet" media="screen" />
+    <link href="@Url.Content("~/Content/carousel.css")" rel="stylesheet" media="screen" />
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
@@ -9,13 +10,52 @@
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
-<div class="navbar">
-<div class="row">
-<div class="container">
-<div class=
-    @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
+    
+
+<!-- Collect the nav links, forms, and other content for toggling -->
+  <div class="collapse navbar-collapse navbar-inverse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Главная страница</a></li>
+        
+      <li><a href="#"></a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Музыка</a>
+        
+      </li>
+        <li>
+            <a href="#">Архитектура</a>
+        </li>
+        <li>
+            <a href="#">Поэзия</a>
+        </li>
+    </ul>
+   
+    <ul class="nav navbar-nav navbar-right">
+   
+      <li class="dropdown">
+        <a href="#" class="label label-important dropdown-toggle" data-toggle="dropdown">Поддержи меня!</b></a>
+     
+      </li>
+    </ul>
+  </div>
+    @Html.Partial("Slide.Shox")
+
+    <div ="container">
+        <div ="row">
+            <div ="span1">
+
+            </div>
+        </div>
+    </div>
+    @Html.Partial("Partial")
+  @RenderBody()
+
+  
+    <script src="@Url.Content("~/Scripts/bootstrap.js")"  type="text/javascript"> </script>
+    <script src="../../dist/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
 </body>
-</html>
+ </html>

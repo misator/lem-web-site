@@ -1,0 +1,1 @@
+﻿select * from Games where Id < 1
