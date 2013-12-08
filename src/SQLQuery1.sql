@@ -1,1 +1,5 @@
-﻿select * from Games where Id < 1
+﻿select * from Games
+
+
+select Name from Games where year=1982
+

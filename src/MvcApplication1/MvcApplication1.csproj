@@ -239,6 +239,7 @@
     <Content Include="Views\Shared\Partial.cshtml" />
     <Content Include="Views\Home\Slide.Shox.cshtml" />
     <Content Include="Views\Shared\News.cshtml" />
+    <Content Include="Views\Home\Game.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
