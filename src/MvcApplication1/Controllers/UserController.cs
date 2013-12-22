@@ -7,26 +7,21 @@ using System.Web.Mvc;
 
 namespace MvcApplication1.Controllers
 {
-    public class HomeController : Controller
+    public class UserController : Controller
     {
         //
-        // GET: /Home/
+        // GET: /User/
 
         public ActionResult Index()
         {
             return View();
         }
-        public ActionResult Game()
+        public ActionResult Music()
         {
-            List<string> testNames = new List<string>();
-            testNames.Add("Mario");
-            testNames.Add("Mario1");
-
             UserModel model = new UserModel();
-            testNames = model.GetGameNames();
-            return View(testNames);
-
+            ViewBag.Numb = model.GetGameNames().Count ;
+            return View();
+            
         }
-
     }
 }

@@ -8,14 +8,14 @@ namespace MvcApplication1.Models
 {
     public class UserModel
     {
-        private string ConnStr = "";
+        private string ConnStr = @"Data Source=(LocalDB)\v11.0;AttachDbFilename=C:\jk'\lem-web-site\src\MvcApplication1\App_Data\Database1.mdf;Integrated Security=True";
         public List<String> GetGameNames()
         {
             SqlConnection Conn = new SqlConnection(ConnStr);
             Conn.Open();
 
             SqlCommand command = Conn.CreateCommand();
-            command.CommandText = "Select Name From Game";
+            command.CommandText = "Select Name From Games";
 
 
             SqlDataReader reader = command.ExecuteReader();
@@ -24,7 +24,7 @@ namespace MvcApplication1.Models
 
             while (reader.Read())
             {
-                name.Add(reader["emails"].ToString());
+                name.Add(reader["name"].ToString());
             }
             return name;
         }
@@ -56,6 +56,7 @@ namespace MvcApplication1.Models
             return id;
 
         }
+
 
     }
 }
