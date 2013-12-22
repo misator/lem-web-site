@@ -235,11 +235,12 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Partial.cshtml" />
-    <Content Include="Views\Home\Slide.Shox.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\News.cshtml" />
     <Content Include="Views\Home\Game.cshtml" />
+    <Content Include="Views\Shared\Poems.cshtml" />
+    <Content Include="Views\Shared\Music.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

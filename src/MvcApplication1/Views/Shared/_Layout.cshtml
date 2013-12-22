@@ -18,18 +18,18 @@
 <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="collapse navbar-collapse navbar-inverse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Главная страница</a></li>
+      <li class="active">
+          <a href="~/Views/Home/Index.cshtml">Главная страница</a></li>
         
-      <li><a href="#"></a></li>
       <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Музыка</a>
+        <a href="~/Views/Shared/Music.cshtml">Музыка</a>
         
       </li>
         <li>
-            <a href="#">Архитектура</a>
+            <a href="~/Views/Shared/News.cshtml">Newости</a>
         </li>
         <li>
-            <a href="#">Поэзия</a>
+            <a href="Views/Shared/Poems.cshtml">Поэзия</a>
         </li>
     </ul>
    
@@ -41,27 +41,7 @@
       </li>
     </ul>
   </div>
-    @Html.Partial("Slide.Shox")
-
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                @Html.Partial("Partial")
-            </div>
-            <div class="col-md-9">
-                @RenderBody()
-            </div>
-
-
-        </div>
-    
-    
-    
-    </div>
-    
-  
-
-  
+    @RenderBody()
     <script src="@Url.Content("~/Scripts/bootstrap.js")"  type="text/javascript"> </script>
     <script src="../../dist/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
